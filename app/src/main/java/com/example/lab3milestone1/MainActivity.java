@@ -13,23 +13,22 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
-
+    private Button button_1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View view)
-                {
-                    openDialog();
-                }
-            });
 
+        button_1 = (Button) findViewById(R.id.my_button);
+        button_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                openDialog();
+            }
+        });
     }
+
     public void openDialog()
     {
         ExampleDialog exampleDialog = new ExampleDialog();
